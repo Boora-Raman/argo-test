@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   labels:
     run: pod
-  name: pod
+  name: pod2
 spec:
   containers:
   - image: nginx
@@ -12,4 +12,3 @@ spec:
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 status: {}
-boora@boora:~$
