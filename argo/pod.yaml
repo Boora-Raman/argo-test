@@ -1,17 +1,8 @@
 apiVersion: v1
-kind: Pod
+kind: ConfigMap
 metadata:
-  creationTimestamp: null
-  labels:
-    run: pods
-  name: pods
-spec:
-  containers:
-  - args:
-    - po
-    image: nginx
-    name: pods
-    resources: {}
-  dnsPolicy: ClusterFirst
-  restartPolicy: Always
-status: {}
+  name: myconfigmap
+  namespace: default
+data:
+  username: k8s-admin
+  access_level: "1"
